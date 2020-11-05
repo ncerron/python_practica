@@ -2,7 +2,7 @@
 
 
 Aplicación en donde se registra los datos de un competencia de tiro con arco y flecha,  realizada en Python.
-Se muestran las distintas consultas como el mejer disparo, cantidad de participantes, etc. en la terminal 
+Se muestran las distintas consultas como el mejor disparo, cantidad de participantes, etc. en la terminal 
 usando Pandas, y guardándolas en archivos csv.
 
 Se implementa un método para guardar toda la información del torneo en una base de datos utilizando sqlite
