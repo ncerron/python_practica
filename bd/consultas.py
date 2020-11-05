@@ -3,14 +3,14 @@ from sqlalchemy.orm import scoped_session
 from sqlalchemy.orm import sessionmaker
 import pandas as pd
 
-import sys
-sys.path.insert(1, 'bd/')
+# import sys
+# sys.path.insert(1, 'bd/')
 
-from bd_setup import Base, Participantes
+from bd.bd_setup import Base, Participantes
 
 engine = create_engine('sqlite:///participantes.db')
 Base.metadata.bind = engine
-Session = scoped_session(sessionmaker(bind=engine))
+Session = sessionmaker(bind=engine)
 session = Session()
 
 

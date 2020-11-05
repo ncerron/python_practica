@@ -79,9 +79,6 @@ class Menu():
         self.c.guardarEnArchivo("none")
 
     def guardar_bd(self):
-    #########################
-    # faltaria validacion si hay erro al guardar
-
         self.c.guardarEnArchivo("none")
         borrar_bd()
 
@@ -92,9 +89,6 @@ class Menu():
 
 
     def ver_bd(self):
-        #######################
-        #### si conusltas esta vacio, borrar la base de datos sino mostrar su 
-        ##contenido
         self.uso_funcion(mostrar_bd())
         
     # fin menu     
@@ -171,7 +165,7 @@ class Menu():
             ListaParticipantes.agregar(participante)
 
             ingreso = self.validacion_input(
-                "Ingrese un nuemero para ingresar un nuevo Participantes,\nsino para salir ingrese 99: ", "int")
+                "Ingrese un numero para ingresar un nuevo Participantes,\nsino para salir ingrese 99: ", "int")
 
 
 class ErrorNombre (Exception):
